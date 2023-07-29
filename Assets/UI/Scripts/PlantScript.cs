@@ -10,20 +10,20 @@ public class PlantScript : MonoBehaviour
 
     void Start()
     {
-        setFruits(1);
-        setPot(2);
+        //setFruits(1);
+        //setPot(2);
     }
 
-    public void setFruits(int fruitNumber)
+    public void setFruits(Semillas fruitNumber)
     {
         foreach (Image fruit in fruits)
         {
-            fruit.sprite = Resources.Load<Sprite>("UI/Fruits/" + fruitNumber);
+            fruit.sprite = Resources.Load<Sprite>("UI/Fruits/" + (int)fruitNumber);
         }
     }
 
-    public void setPot(int potNumber)
+    public void setPot(Propiedades potNumber)
     {
-        pot.sprite = Resources.Load<Sprite>("UI/Pots/" + potNumber);
+        pot.sprite = Resources.Load<Sprite>("UI/Pots/" + (int)potNumber);
     }
 }

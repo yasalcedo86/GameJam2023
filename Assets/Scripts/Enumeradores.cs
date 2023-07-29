@@ -7,17 +7,17 @@
 
 public enum Semillas
 {
-    Fruta1,
-    Fruta2,
-    Fruta3,
+    Fruta1 = 1,
+    Fruta2 = 2,
+    Fruta3 = 3,
 }
 
 public enum Propiedades
 {
 
-    Propiedad1,
-    Propiedad2,
-    Propiedad3
+    Propiedad1 = 1,
+    Propiedad2 = 2,
+    Propiedad3 = 3
 }
 
 public enum Altura

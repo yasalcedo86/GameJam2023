@@ -22,6 +22,13 @@ public class CreadorPlantas : MonoBehaviour
     public Button prop1;
     public Button prop2;
     public Button prop3;
+
+    private PlantScript plantScript;
+    public GameObject contenedor;
+    public GameObject plantaPequeña;
+    public GameObject plantaMediana;
+    public GameObject plantaGrande;
+    private GameObject plantaInstanciada;
     // Start is called before the first frame update
     void Start()
     {
@@ -64,6 +71,26 @@ public class CreadorPlantas : MonoBehaviour
     public void validarPlanta()
     {
         validarAltura();
+
+        switch (planta.Altura)
+        {
+            case Altura.Pequeña:
+                plantaInstanciada = Instantiate(plantaPequeña, contenedor.transform);
+                break;
+            case Altura.Mediana:
+                plantaInstanciada = Instantiate(plantaMediana, contenedor.transform);
+                break;
+            case Altura.Grande:
+                plantaInstanciada = Instantiate(plantaGrande, contenedor.transform);
+                break;
+            default:
+                break;
+        }
+
+        plantScript = plantaInstanciada.GetComponent<PlantScript>();
+
+        plantScript.setFruits(planta.Fruta);
+        plantScript.setPot(planta.Propiedades);
         Debug.Log(planta.Altura.ToString());
         Debug.Log(planta.Fruta.ToString());
         Debug.Log(planta.Propiedades.ToString());
