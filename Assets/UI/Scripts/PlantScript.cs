@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class PlantScript : MonoBehaviour
 {
-    public Image pot = null;
-    public Image[] fruits = null;
+    public Image pot;
+    public Image[] fruits;
 
     void Start()
     {
