@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class YarnnController : MonoBehaviour
 {
     public GameObject NPC;
+    public CreadorPlantas Controller;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,7 @@ public class YarnnController : MonoBehaviour
     }
 
     [SerializeField] SerializableDictionaryBase<string, Sprite> DictionaryExpression = default;
+    [SerializeField] SerializableDictionaryBase<string, Misiones> DictionaryMision = default;
     [YarnCommand("SetNPC")]
     public void SetMaterial(string id)
     {
@@ -39,5 +41,13 @@ public class YarnnController : MonoBehaviour
     public void HideNpc()
     {
         NPC.SetActive(false);
+    }
+
+    [YarnCommand("SetMision")]
+    public void SetMision(string id)
+    {
+        Debug.Log(id);
+        if (DictionaryMision.ContainsKey(id))
+           Controller.misionActual = DictionaryMision[id];
     }
 }

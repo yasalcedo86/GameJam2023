@@ -3,13 +3,13 @@ tags:
 ---
 <<SetNPC yarnController MujerFeliz>>
 <<ShowNPC yarnController >>
-Mujer consumidora: Hola, necesito una planta de mariguana papi.
--> Claro, cuantos gramos.
-    Mujer consumidora: 100g Gracias.
--> No tenemos en el momento
+Mujer consumidora: Hola, necesito una planta pequeña, con la fruta 1 y la propiedad 1.
+<<SetMision yarnController Mision2>>
+
+-> Claro.
+    Mujer consumidora: Gracias.
+-> Bueno, pero te saldra caro.
     <<jump negativo>>
-    
-Mujer consumidora: Chao.
 <<HideNPC yarnController >>
 
 ===
@@ -17,7 +17,7 @@ title: negativo
 tags:
 ---
 <<SetNPC yarnController MujerDudosa>>
-Mujer consumidora: Bueno, ni modo chao.
+Mujer consumidora: Bueno, ni modo.
 <<HideNPC yarnController >>
 
 ===
