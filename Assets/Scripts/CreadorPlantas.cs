@@ -29,6 +29,10 @@ public class CreadorPlantas : MonoBehaviour
     public GameObject plantaMediana;
     public GameObject plantaGrande;
     private GameObject plantaInstanciada;
+
+    public Button entregarPlanta;
+    public Misiones misionActual;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +48,9 @@ public class CreadorPlantas : MonoBehaviour
         prop1.onClick.AddListener(() => { addPropiedades(Propiedades.Propiedad1); });
         prop2.onClick.AddListener(() => { addPropiedades(Propiedades.Propiedad2); });
         prop3.onClick.AddListener(() => { addPropiedades(Propiedades.Propiedad3); });
+
+        entregarPlanta.onClick.AddListener(() => { misionActual.validarMisionCompleta(planta); });
+
     }
 
     public void addLiquidos(Liquidos liquidos)
@@ -71,6 +78,10 @@ public class CreadorPlantas : MonoBehaviour
     public void validarPlanta()
     {
         validarAltura();
+        foreach (Transform child in contenedor.transform)
+        {
+            GameObject.Destroy(child.gameObject);
+        }
 
         switch (planta.Altura)
         {
@@ -91,6 +102,8 @@ public class CreadorPlantas : MonoBehaviour
 
         plantScript.setFruits(planta.Fruta);
         plantScript.setPot(planta.Propiedades);
+
+
         Debug.Log(planta.Altura.ToString());
         Debug.Log(planta.Fruta.ToString());
         Debug.Log(planta.Propiedades.ToString());
