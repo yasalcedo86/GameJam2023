@@ -955,6 +955,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ActionItem (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8286310482749554860, guid: fdc18a01d90c888428333f9845254221, type: 3}
+      propertyPath: m_text
+      value: Curar
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590758015134765144, guid: fdc18a01d90c888428333f9845254221, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b0684a72e8c4b6e43ad7be34868a1d42, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1137,8 +1145,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8286310482749554860, guid: fdc18a01d90c888428333f9845254221, type: 3}
       propertyPath: m_text
-      value: Uranio
+      value: Perfume
       objectReference: {fileID: 0}
+    - target: {fileID: 8590758015134765144, guid: fdc18a01d90c888428333f9845254221, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5a7fbce0ff9a3b24296528700b62f77d, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1244,6 +1256,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ActionItem (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 8286310482749554860, guid: fdc18a01d90c888428333f9845254221, type: 3}
+      propertyPath: m_text
+      value: Acelerar
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590758015134765144, guid: fdc18a01d90c888428333f9845254221, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b0684a72e8c4b6e43ad7be34868a1d42, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2334,6 +2354,18 @@ MonoBehaviour:
           m_StringArgument: MisionCumplida
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1244040080}
+        m_TargetAssemblyTypeName: PointsScript, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 500
+          m_FloatArgument: 0
+          m_StringArgument: MisionCumplida
+          m_BoolArgument: 0
+        m_CallState: 2
   misionFallida:
     m_PersistentCalls:
       m_Calls:
@@ -2341,6 +2373,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: Yarn.Unity.DialogueRunner, YarnSpinner.Unity
         m_MethodName: StartDialogue
         m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 500
+          m_FloatArgument: 0
+          m_StringArgument: MisionFallida
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1244040080}
+        m_TargetAssemblyTypeName: PointsScript, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2512,6 +2556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4952d253a17aa1e4baf1e63c0fcfde37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointsGameObject: {fileID: 1244040078}
 --- !u!114 &1285304593 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2104224621083736615, guid: fdc18a01d90c888428333f9845254221, type: 3}
@@ -2627,6 +2672,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Coca Cola
       objectReference: {fileID: 0}
+    - target: {fileID: 8590758015134765144, guid: fdc18a01d90c888428333f9845254221, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a498d3fa568e3424f82fdb9f1ffd12e6, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3295,6 +3344,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ActionItem (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8286310482749554860, guid: fdc18a01d90c888428333f9845254221, type: 3}
+      propertyPath: m_text
+      value: Engatusar
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590758015134765144, guid: fdc18a01d90c888428333f9845254221, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b0684a72e8c4b6e43ad7be34868a1d42, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3439,6 +3496,18 @@ MonoBehaviour:
           m_StringArgument: "MisionCumplidaNi\xF1o"
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1244040080}
+        m_TargetAssemblyTypeName: PointsScript, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 500
+          m_FloatArgument: 0
+          m_StringArgument: "MisionCumplidaNi\xF1o"
+          m_BoolArgument: 0
+        m_CallState: 2
   misionFallida:
     m_PersistentCalls:
       m_Calls:
@@ -3446,6 +3515,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: Yarn.Unity.DialogueRunner, YarnSpinner.Unity
         m_MethodName: StartDialogue
         m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "MisionFallidaNi\xF1o"
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1244040080}
+        m_TargetAssemblyTypeName: PointsScript, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4736,6 +4817,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Agua
       objectReference: {fileID: 0}
+    - target: {fileID: 8590758015134765144, guid: fdc18a01d90c888428333f9845254221, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cec0e13201252a34fa44c6b380fccac9, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
