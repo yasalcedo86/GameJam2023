@@ -50,4 +50,10 @@ public class YarnnController : MonoBehaviour
         if (DictionaryMision.ContainsKey(id))
            Controller.misionActual = DictionaryMision[id];
     }
+
+    [YarnCommand("ResetValues")]
+    public void ResetValues()
+    {
+        Controller.ResetValues();
+    }
 }
