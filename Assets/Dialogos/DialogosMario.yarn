@@ -4,7 +4,7 @@ tags:
 <<SetNPC yarnController MujerFeliz>>
 <<ShowNPC yarnController >>
 Mujer consumidora: Hola, necesito una planta pequeña, con la fruta 1 y la propiedad 1.
-<<SetMision yarnController Mision2>>
+<<SetMision yarnController Mision1>>
 
 -> Claro.
     Mujer consumidora: Gracias.
