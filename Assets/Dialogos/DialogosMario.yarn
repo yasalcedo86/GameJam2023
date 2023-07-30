@@ -1,8 +1,10 @@
 ﻿title: Dialogo1
 tags:
 ---
+
 <<SetNPC yarnController MujerFeliz>>
 <<ShowNPC yarnController >>
+<<HideUI yarnController >>
 Mujer consumidora: Hola, necesito una planta pequeña, con la fruta 1 y la propiedad 1.
 <<SetMision yarnController Mision1>>
 
@@ -11,6 +13,8 @@ Mujer consumidora: Hola, necesito una planta pequeña, con la fruta 1 y la propi
 -> Bueno, pero te saldra caro.
     <<jump negativo>>
 <<HideNPC yarnController >>
+<<ShowUI yarnController >>
+
 
 ===
 
@@ -20,6 +24,7 @@ tags:
 <<SetNPC yarnController MujerDudosa>>
 Mujer consumidora: Bueno, ni modo.
 <<HideNPC yarnController >>
+<<ShowUI yarnController >>
 
 ===
 
@@ -49,6 +54,7 @@ Mujer consumidora: Esto no fue lo que imagine.
 title: ConexionAMision2
 position: 10,10
 ---
+<<HideUI yarnController >>
 Otro trabajo bien realizado.
 Al parecer viene otra persona.
 <<wait 1>>
@@ -70,6 +76,7 @@ Niño herido: Hola, me podrias ayudar con algo que me ayude a sentirme mejor?.
 -> Bueno, pero tienes para pagar?.
     Niño herido: ...
 <<HideNPC yarnController >>
+<<ShowUI yarnController >>
 
 ===
 
