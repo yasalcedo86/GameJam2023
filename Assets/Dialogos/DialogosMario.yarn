@@ -87,6 +87,7 @@ position: 0,0
 <<ShowNPC yarnController >>
 Niño herido: Muchas gracias, justo lo que necesitaba.
 <<HideNPC yarnController >>
+<<jump DialogoFinal >>
 
 ===
 title: MisionFallidaNiño
@@ -102,11 +103,13 @@ Niño herido: Esto no fue lo que imagine.
 title: DialogoFinal
 position: 10,10
 ---
+<<HideUI yarnController >>
+
 Desarrolladores: Muchas gracias por llegar hasta aqui.
 
 <<SetNPC yarnController MujerFeliz>>
 <<ShowNPC yarnController >>
-Mujer consumidora: (Aplausos) Felicidades.
+Mujer reformada: (Aplausos) Felicidades.
 
 <<SetNPC yarnController NiñoHeridoFeliz>>
 <<ShowNPC yarnController >>
