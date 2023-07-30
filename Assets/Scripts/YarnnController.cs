@@ -9,16 +9,18 @@ public class YarnnController : MonoBehaviour
 {
     public GameObject NPC;
     public CreadorPlantas Controller;
+    public GameObject UIMachine;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     [SerializeField] SerializableDictionaryBase<string, Sprite> DictionaryExpression = default;
@@ -48,7 +50,19 @@ public class YarnnController : MonoBehaviour
     {
         Debug.Log(id);
         if (DictionaryMision.ContainsKey(id))
-           Controller.misionActual = DictionaryMision[id];
+            Controller.misionActual = DictionaryMision[id];
+    }
+
+    [YarnCommand("ShowUI")]
+    public void ShowUI()
+    {
+        UIMachine.SetActive(true);
+    }
+
+    [YarnCommand("HideUI")]
+    public void HideUI()
+    {
+        UIMachine.SetActive(false);
     }
 
     [YarnCommand("ResetValues")]
