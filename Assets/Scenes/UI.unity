@@ -154,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NPC: {fileID: 1724980043889266339}
   Controller: {fileID: 136876522}
-  UIMachine: {fileID: 0}
+  UIMachine: {fileID: 417428755}
   DictionaryExpression:
     reorderableList:
       canAdd: 1
@@ -181,12 +181,21 @@ MonoBehaviour:
     _keyValues:
     - MujerFeliz
     - MujerDudosa
+    - "Ni\xF1oHerido"
+    - "Ni\xF1oHeridoTriste"
+    - "Ni\xF1oHeridoFeliz"
     _keys:
     - MujerFeliz
     - MujerDudosa
+    - "Ni\xF1oHerido"
+    - "Ni\xF1oHeridoTriste"
+    - "Ni\xF1oHeridoFeliz"
     _values:
     - {fileID: 21300000, guid: 275695d69912e4b41b52e165bfa19f4b, type: 3}
     - {fileID: 21300000, guid: 020444422b30b9643abc7b8f3b516605, type: 3}
+    - {fileID: 21300000, guid: 43fcc01c1d3e0194ba05974adabdced6, type: 3}
+    - {fileID: 21300000, guid: 345bdcb607f9fb64781b2b27bbdbf188, type: 3}
+    - {fileID: 21300000, guid: 605319ba7800fe944b55c372254a7d77, type: 3}
   DictionaryMision:
     reorderableList:
       canAdd: 1
@@ -212,10 +221,10 @@ MonoBehaviour:
     isExpanded: 1
     _keyValues:
     - Mision1
-    - Mision2
+    - "MisionNi\xF1oHerido"
     _keys:
     - Mision1
-    - Mision2
+    - "MisionNi\xF1oHerido"
     _values:
     - {fileID: 1156523299}
     - {fileID: 1775173135}
@@ -398,6 +407,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ActionItem (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8590758015134765144, guid: fdc18a01d90c888428333f9845254221, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 86395232e2803de4799929c635bec239, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -503,6 +516,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ActionItem (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8286310482749554860, guid: fdc18a01d90c888428333f9845254221, type: 3}
+      propertyPath: m_text
+      value: Petroleo
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590758015134765144, guid: fdc18a01d90c888428333f9845254221, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4de94cbaff98df0458574eea81ee5df1, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1113,6 +1134,10 @@ PrefabInstance:
     - target: {fileID: 7300024707069633050, guid: fdc18a01d90c888428333f9845254221, type: 3}
       propertyPath: m_Name
       value: ActionItem (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8286310482749554860, guid: fdc18a01d90c888428333f9845254221, type: 3}
+      propertyPath: m_text
+      value: Uranio
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2351,6 +2376,7 @@ GameObject:
   - component: {fileID: 1244040077}
   - component: {fileID: 1244040079}
   - component: {fileID: 1244040078}
+  - component: {fileID: 1244040080}
   m_Layer: 5
   m_Name: Points
   m_TagString: Untagged
@@ -2474,6 +2500,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1244040076}
   m_CullTransparentMesh: 1
+--- !u!114 &1244040080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244040076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4952d253a17aa1e4baf1e63c0fcfde37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1285304593 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2104224621083736615, guid: fdc18a01d90c888428333f9845254221, type: 3}
@@ -2584,6 +2622,10 @@ PrefabInstance:
     - target: {fileID: 7300024707069633050, guid: fdc18a01d90c888428333f9845254221, type: 3}
       propertyPath: m_Name
       value: ActionItem (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8286310482749554860, guid: fdc18a01d90c888428333f9845254221, type: 3}
+      propertyPath: m_text
+      value: Coca Cola
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3076,7 +3118,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Semilla
+  m_text: Liquido
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 20f005feeb307d24a969c4cbcbbdb818, type: 2}
   m_sharedMaterial: {fileID: 6213761885564057395, guid: 20f005feeb307d24a969c4cbcbbdb818, type: 2}
@@ -3394,7 +3436,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: MisionCumplida
+          m_StringArgument: "MisionCumplidaNi\xF1o"
           m_BoolArgument: 0
         m_CallState: 2
   misionFallida:
@@ -3409,7 +3451,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: MisionFallida
+          m_StringArgument: "MisionFallidaNi\xF1o"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1775955341
@@ -3612,7 +3654,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Liquidos
+  m_text: Semillas
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 20f005feeb307d24a969c4cbcbbdb818, type: 2}
   m_sharedMaterial: {fileID: 6213761885564057395, guid: 20f005feeb307d24a969c4cbcbbdb818, type: 2}
@@ -3788,6 +3830,10 @@ PrefabInstance:
     - target: {fileID: 7300024707069633050, guid: fdc18a01d90c888428333f9845254221, type: 3}
       propertyPath: m_Name
       value: ActionItem (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8286310482749554860, guid: fdc18a01d90c888428333f9845254221, type: 3}
+      propertyPath: m_text
+      value: Alchachofa
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4685,6 +4731,10 @@ PrefabInstance:
     - target: {fileID: 7300024707069633050, guid: fdc18a01d90c888428333f9845254221, type: 3}
       propertyPath: m_Name
       value: ActionItem (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8286310482749554860, guid: fdc18a01d90c888428333f9845254221, type: 3}
+      propertyPath: m_text
+      value: Agua
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
