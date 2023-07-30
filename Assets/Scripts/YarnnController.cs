@@ -64,4 +64,10 @@ public class YarnnController : MonoBehaviour
     {
         UIMachine.SetActive(false);
     }
+
+    [YarnCommand("ResetValues")]
+    public void ResetValues()
+    {
+        Controller.ResetValues();
+    }
 }

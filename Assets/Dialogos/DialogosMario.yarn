@@ -13,6 +13,7 @@ Mujer consumidora: Hola, necesito una planta pequeña, con la fruta 1 y la propi
 <<HideNPC yarnController >>
 
 ===
+
 title: negativo
 tags:
 ---
@@ -30,6 +31,7 @@ position: 0,0
 <<ShowNPC yarnController >>
 Mujer consumidora: Muchas gracias, justo lo que necesitaba.
 <<HideNPC yarnController >>
+<<jump ConexionAMision2>>
 
 ===
 title: MisionFallida
@@ -38,6 +40,54 @@ position: 10,10
 <<SetNPC yarnController MujerDudosa>>
 <<ShowNPC yarnController >>
 Mujer consumidora: Esto no fue lo que imagine.
+<<HideNPC yarnController >>
+<<jump ConexionAMision2>>
+
+===
+
+
+title: ConexionAMision2
+position: 10,10
+---
+Otro trabajo bien realizado.
+Al parecer viene otra persona.
+<<wait 1>>
+<<jump Dialogo2>>
+
+===
+
+
+title: Dialogo2
+tags:
+---
+<<SetNPC yarnController NiñoHerido>>
+<<ShowNPC yarnController >>
+Niño herido: Hola, me podrias ayudar con algo que me ayude a sentirme mejor?.
+<<SetMision yarnController MisionNiñoHerido>>
+<<ResetValues yarnController>>
+-> Claro.
+    Niño herido: Gracias.
+-> Bueno, pero tienes para pagar?.
+    Niño herido: ...
+<<HideNPC yarnController >>
+
+===
+
+title: MisionCumplidaNiño
+position: 0,0
+---
+<<SetNPC yarnController NiñoHeridoFeliz>>
+<<ShowNPC yarnController >>
+Niño herido: Muchas gracias, justo lo que necesitaba.
+<<HideNPC yarnController >>
+
+===
+title: MisionFallidaNiño
+position: 10,10
+---
+<<SetNPC yarnController NiñoHeridoTriste>>
+<<ShowNPC yarnController >>
+Niño herido: Esto no fue lo que imagine.
 <<HideNPC yarnController >>
 
 ===

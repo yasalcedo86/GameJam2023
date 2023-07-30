@@ -34,6 +34,16 @@ public class CreadorPlantas : MonoBehaviour
     public Misiones misionActual;
 
     // Start is called before the first frame update
+
+    public void ResetValues()
+    {
+        liquidosAgregados.Clear();
+        planta.Fruta = Semillas.Fruta1;
+        planta.Propiedades = Propiedades.Propiedad1;
+        enableButtonsLiquidos();
+        limpiarPlanta();
+    }
+
     void Start()
     {
         planta = new Planta();
@@ -75,14 +85,18 @@ public class CreadorPlantas : MonoBehaviour
         planta.Propiedades = propiedades;
     }
 
-    public void validarPlanta()
-    {
-        validarAltura();
+    void limpiarPlanta() { 
         foreach (Transform child in contenedor.transform)
         {
             GameObject.Destroy(child.gameObject);
         }
 
+    }
+
+    public void validarPlanta()
+    {
+        validarAltura();
+        limpiarPlanta();
         switch (planta.Altura)
         {
             case Altura.Pequeña:
@@ -115,6 +129,13 @@ public class CreadorPlantas : MonoBehaviour
         agua.interactable = false;
         coca.interactable = false;
         energizante.interactable = false;
+    }
+
+    void enableButtonsLiquidos()
+    {
+        agua.interactable = true;
+        coca.interactable = true;
+        energizante.interactable = true;
     }
 
     void disableButtonsFrutas()
