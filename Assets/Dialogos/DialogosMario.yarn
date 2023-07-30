@@ -91,3 +91,36 @@ Niño herido: Esto no fue lo que imagine.
 <<HideNPC yarnController >>
 
 ===
+
+title: DialogoFinal
+position: 10,10
+---
+<<SetNPC yarnController MujerFeliz>>
+<<ShowNPC yarnController >>
+Mujer consumidora: (Aplausos) Felicidades.
+
+<<SetNPC yarnController NiñoHeridoFeliz>>
+<<ShowNPC yarnController >>
+Niño herido: (Aplausos) Felicidades.
+
+<<SetNPC yarnController PunkFeliz>>
+<<ShowNPC yarnController >>
+Peter punk: (Aplausos) Felicidades.
+<<HideNPC yarnController >>
+<<wait 3>>
+<<jump PostCreditosSteam >>
+
+===
+
+
+title: PostCreditosSteam
+position: 10,10
+---
+<<SetNPC yarnController HombreSteam>>
+<<ShowNPC yarnController >>
+Hombre misterioso: Proximamente disponible en Steam.
+<<HideNPC yarnController >>
+
+===
+
+
