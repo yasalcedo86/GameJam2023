@@ -21,3 +21,23 @@ Mujer consumidora: Bueno, ni modo chao.
 <<HideNPC yarnController >>
 
 ===
+
+
+title: MisionCumplida
+position: 0,0
+---
+<<SetNPC yarnController MujerFeliz>>
+<<ShowNPC yarnController >>
+Mujer consumidora: Muchas gracias, justo lo que necesitaba.
+<<HideNPC yarnController >>
+
+===
+title: MisionFallida
+position: 10,10
+---
+<<SetNPC yarnController MujerDudosa>>
+<<ShowNPC yarnController >>
+Mujer consumidora: Esto no fue lo que imagine.
+<<HideNPC yarnController >>
+
+===
