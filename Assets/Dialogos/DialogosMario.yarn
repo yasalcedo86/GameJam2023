@@ -96,12 +96,14 @@ position: 10,10
 <<ShowNPC yarnController >>
 Niño herido: Esto no fue lo que imagine.
 <<HideNPC yarnController >>
-
+<<jump DialogoFinal >>
 ===
 
 title: DialogoFinal
 position: 10,10
 ---
+Desarrolladores: Muchas gracias por llegar hasta aqui.
+
 <<SetNPC yarnController MujerFeliz>>
 <<ShowNPC yarnController >>
 Mujer consumidora: (Aplausos) Felicidades.
@@ -114,7 +116,7 @@ Niño herido: (Aplausos) Felicidades.
 <<ShowNPC yarnController >>
 Peter punk: (Aplausos) Felicidades.
 <<HideNPC yarnController >>
-<<wait 3>>
+<<wait 1>>
 <<jump PostCreditosSteam >>
 
 ===
@@ -126,7 +128,8 @@ position: 10,10
 <<SetNPC yarnController HombreSteam>>
 <<ShowNPC yarnController >>
 Hombre misterioso: Proximamente disponible en Steam.
-<<HideNPC yarnController >>
+<<wait 1 >>
+<<ChageCredits yarnController >>
 
 ===
 

@@ -4,12 +4,14 @@ using UnityEngine;
 using Yarn.Unity;
 using RotaryHeart.Lib.SerializableDictionary;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class YarnnController : MonoBehaviour
 {
     public GameObject NPC;
     public CreadorPlantas Controller;
     public GameObject UIMachine;
+    public SceneController SceneManager;
 
     // Start is called before the first frame update
     void Start()
@@ -69,5 +71,11 @@ public class YarnnController : MonoBehaviour
     public void ResetValues()
     {
         Controller.ResetValues();
+    }
+
+    [YarnCommand("ChageCredits")]
+    public void ChangeCredits()
+    {
+        SceneManager.changeScene("Credits");
     }
 }
