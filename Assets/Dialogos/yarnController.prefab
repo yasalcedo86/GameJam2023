@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6300141729099151309
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9102072335366428810}
+  - component: {fileID: 6547352026346868920}
+  m_Layer: 0
+  m_Name: yarnController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9102072335366428810
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6300141729099151309}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 297.83975, y: 289.7587, z: -3.0657508}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6547352026346868920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6300141729099151309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e6ac45583ceddd41ae61e7f2c29e2d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPC: {fileID: 0}
+  Controller: {fileID: 0}
+  UIMachine: {fileID: 0}
+  SceneManager: {fileID: 0}
+  DictionaryExpression:
+    reorderableList:
+      canAdd: 1
+      canRemove: 1
+      draggable: 1
+      expandable: 1
+      multipleSelection: 1
+      isExpanded: 1
+      label:
+        m_Text: Keys
+        m_Image: {fileID: 0}
+        m_Tooltip: 
+      headerHeight: 18
+      footerHeight: 13
+      slideEasing: 0.15
+      verticalSpacing: 2
+      showDefaultBackground: 1
+      elementDisplayType: 0
+      elementNameProperty: 
+      elementNameOverride: 
+      elementIcon: {fileID: 0}
+    reqReferences: {fileID: 0}
+    isExpanded: 1
+    _keyValues:
+    - MujerFeliz
+    - MujerDudosa
+    - "Ni\xF1oHerido"
+    - "Ni\xF1oHeridoTriste"
+    - "Ni\xF1oHeridoFeliz"
+    - PunkFeliz
+    - HombreSteam
+    _keys:
+    - MujerFeliz
+    - MujerDudosa
+    - "Ni\xF1oHerido"
+    - "Ni\xF1oHeridoTriste"
+    - "Ni\xF1oHeridoFeliz"
+    - PunkFeliz
+    - HombreSteam
+    _values:
+    - {fileID: 21300000, guid: 275695d69912e4b41b52e165bfa19f4b, type: 3}
+    - {fileID: 21300000, guid: 020444422b30b9643abc7b8f3b516605, type: 3}
+    - {fileID: 21300000, guid: 43fcc01c1d3e0194ba05974adabdced6, type: 3}
+    - {fileID: 21300000, guid: 345bdcb607f9fb64781b2b27bbdbf188, type: 3}
+    - {fileID: 21300000, guid: 605319ba7800fe944b55c372254a7d77, type: 3}
+    - {fileID: 21300000, guid: a6f6d3a884685944a826faf124252173, type: 3}
+    - {fileID: 21300000, guid: f5161cbe4ffbb3b4190460b465c16970, type: 3}
+  DictionaryMision:
+    reorderableList:
+      canAdd: 1
+      canRemove: 1
+      draggable: 1
+      expandable: 1
+      multipleSelection: 1
+      isExpanded: 1
+      label:
+        m_Text: Keys
+        m_Image: {fileID: 0}
+        m_Tooltip: 
+      headerHeight: 18
+      footerHeight: 13
+      slideEasing: 0.15
+      verticalSpacing: 2
+      showDefaultBackground: 1
+      elementDisplayType: 0
+      elementNameProperty: 
+      elementNameOverride: 
+      elementIcon: {fileID: 0}
+    reqReferences: {fileID: 0}
+    isExpanded: 1
+    _keyValues:
+    - Mision1
+    - "MisionNi\xF1oHerido"
+    _keys:
+    - Mision1
+    - "MisionNi\xF1oHerido"
+    _values:
+    - {fileID: 0}
+    - {fileID: 0}
